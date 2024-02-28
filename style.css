@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face  {
+    font-family: 'cloudy';
+    src: url('./font/Cloudy June.ttf');
+}
+@font-face  {
+    font-family: 'quicksand_book';
+    src: url('./font/Quicksand_Book.otf');
+}
+@font-face  {
+    font-family: 'quicksand_book_oblique';
+    src: url('./font/Quicksand_Book_Oblique.otf');
+}
+
+
+
+
+
+@media screen and (orientation: portrait){
+    
+
+
+body {
+    background: url("https://images.unsplash.com/photo-1604147706283-d7119b5b822c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+
+/* -------- dialog --------- */
+
+dialog {
+    width: 100%;
+    height: 100%;
+    background: url("https://images.unsplash.com/photo-1537420327992-d6e192287183?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1888&q=80");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+dialog span {
+    font-size: 20vw;
+    position: absolute;
+    right: 4vh;
+    font-weight: 300;
+}
+
+dialog p {
+    width: 50vh;
+    height: 60vh;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 40%;
+    font-size: 8vw;
+    text-align: justify;
+    line-height: 7vh;
+}
+
+/* ----- Head ------ */
+#corpo {
+    /*display: none;*/
+}
+
+#titulo {
+    font-size: 12vw;
+    position: absolute;
+    transform: translateY(3vh);
+    font-family: 'cloudy';
+}
+
+#boxHead {
+    background-color: #6600ff;
+    height: 17vh;
+    display: flex;
+    justify-content: center;
+}
+#boxHead:after {
+    content: '';
+    background-color: #6600ff;
+    display: block;
+    width: 40vh;
+    height: 40vh;
+    transform: translateY(12vh);
+    clip-path: circle(14vh at top);
+    z-index: -1;
+}
+
+#boxHead img {
+    position: absolute;
+    transform: translateY(16vh);
+    margin-left: 1vh;
+}
+
+#secao {
+    margin: 20vh 0 0 0;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-row-gap: 10vh;
+    justify-content: space-around;
+}
+
+#secao div {
+    display: grid;
+    border: 2px solid gray;
+    width: 20vh;
+    height: 20vh;
+    border-radius: 3px;
+    justify-content: center;
+    text-align: center;
+}
+
+#secao legend {
+    font-family: 'quicksand_book_oblique';
+    font-size: 5vw;
+    word-wrap: break-word;
+}
+
+
+#livros, #FraseDiaria {
+    display: none;
+}
+
+/* livros*/
+#livros {
+    margin-top: 20vh;
+    padding: 10vh 0 10vh 0;
+    border-top: 2px solid #6600ff;
+}
+
+#boxSelect {
+    display: flex;
+}
+
+#selecaoLivros {
+    width: 30vh;
+    height: 7vh;
+    margin-left: 2vh;
+}
+
+#selecaoCapitulos {
+    width: 15vh;
+    height: 7vh;
+    position: absolute;
+    right: 3vh;
+}
+
+#boxVersus {
+    margin-top: 8vh;
+}
+
+#boxVersus legend{
+    text-align: left;
+    padding: 0 1vh 0 1vh;
+    hyphens: auto;
+    margin: 2vh 0 0 0;
+}
+/* livros  */
+
+#FraseDiaria {
+    border: 2px solid blue;
+    margin: 24vh 1vh 0 1vh;
+    border-radius: 4px;
+    height: 30vh;
+    
+}
+/* sobre */
+
+#Sobre {
+    display: none;
+    margin: 27vh 0 0 0;
+    border-top: 2px solid #6600ff;
+    font-family: 'cloudy';
+    padding: 2vh 0 5vh 0;
+}
+
+#Sobre div {
+    padding-left: 4vh;
+    font-size: 4vh;
+}
+
+#tituloCredito {
+    text-align: center;
+    font-size: 7vh;
+}
+
+.subTitleCredit {
+    margin-left: 4vh;
+    
+}
+
+
+}/*portrait*/
+
+
+
+@media screen and (orientation: landscape){
+    
+    dialog {
+        width: 100%;
+        height: 100%;
+        background-color: purple;
+    }
+    
+    dialog span {
+        font-size: 10vw;
+        position: absolute;
+        right: 4vh;
+        font-weight: 300;
+    }
+    
+    dialog p {
+        width: 150vh;
+        height: 60vh;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        margin-top: 15%;
+        font-size: 4vw;
+        text-align: justify;
+        line-height: 12vh;
+        text-align-last: center;
+    }
+    
+    #corpo {
+        display: none;
+    }
+    
+    #titulo {
+        font-size: 8vw;
+        position: absolute;
+        font-family: 'cloudy';
+    }
+    
+    #boxHead {
+        background-color: #6600ff;
+        height: 23vh;
+        display: flex;
+        justify-content: center;
+    
+    }
+    
+    #boxHead:after {
+        content: '';
+        background-color: #6600ff;
+        display: block;
+        width: 150vh;
+        height: 150vh;
+        transform: translateY(17vh);
+        clip-path: circle(24vh at top);
+        z-index: -1;
+    }
+    
+    #boxHead img {
+        position: absolute;
+        transform: translateY(20vh);
+        margin-left: 1vh;
+        width: 20vh;
+    }
+    
+    #secao {
+        margin: 35vh 0 0 0;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-row-gap: 10vh;
+        justify-content: space-around;
+    }
+    
+    #secao div {
+        display: grid;
+        border: 2px solid gray;
+        width: 32vh;
+        height: 32vh;
+        border-radius: 8px;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    #secao legend {
+        font-family: 'quicksand_book_oblique';
+        font-size: 2vw;
+        word-wrap: break-word;
+    }
+    
+    #livros, #FraseDiaria {
+        display: none;
+    }
+    
+    #livros {
+        margin-top: 40vh;
+        padding: 10vh 30vh 10vh 30vh;
+        border-top: 2px solid #6600ff;
+    }
+
+    #boxSelect {
+        display: flex;
+    }
+    
+    #selecaoLivros {
+        width: 50vh;
+        height: 7vh;
+        
+    }
+    
+    #selecaoCapitulos {
+        width: 27vh;
+        height: 7vh;
+        position: absolute;
+        right: 3vh;
+    }
+    
+    #boxVersus {
+        margin-top: 8vh;
+    }
+    
+    #boxVersus legend{
+        text-align: left;
+        padding: 0 1vh 0 1vh;
+        hyphens: auto;
+        margin: 2vh 0 0 0;
+    }
+    
+    
+    #Sobre {
+        display: none;
+        margin: 27vh 0 0 0;
+        border-top: 2px solid #6600ff;
+        font-family: 'cloudy';
+        padding: 2vh 0 5vh 0;
+    }
+    
+    #Sobre div {
+        padding-left: 4vh;
+        font-size: 4vh;
+    }
+    
+    #tituloCredito {
+        text-align: center;
+        font-size: 7vh;
+    }
+
+    .subTitleCredit {
+        margin-left: 4vh;
+    
+    }
+    
+    
+    
+}
+

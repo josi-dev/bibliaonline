@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Bíblia Sagrada</title>
+</head>
+<body>
+    
+    <dialog>
+        <span onclick="fecharPalavraDiaria()">×</span>
+        <p id="day">gente proveita a gente vai dar certo de fazer isso usando tu conseguiu aonde ele mora</p>
+    </dialog>
+    
+    
+    
+    <div id="corpo">
+        
+        <article id="boxHead">
+            <p id="titulo">Biblia</p>
+        <img src="https://cdn-icons-png.flaticon.com/512/4186/4186019.png" alt="" width="50vh">
+        </article>
+        
+        
+        <article id="secao">
+            
+            <div onclick="caminhoDirecionar('Livros')">
+                <img src="https://cdn-icons-png.flaticon.com/512/2142/2142707.png" alt="livro" width="60">
+                <legend>Livros</legend>
+            </div>
+            
+            
+            <div onclick="caminhoDirecionar('Sobre')">
+                <img src="https://cdn-icons-png.flaticon.com/512/4366/4366920.png" alt="sobre" width="60">
+                <legend>Sobre</legend>
+            </div>
+            
+            
+            
+            <div onclick="caminhoDirecionar('Quiz')">
+                <img src="https://cdn-icons-png.flaticon.com/512/5907/5907980.png" alt="" width="60">
+                <legend>Quiz</legend>
+            </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </article>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <article id="livros">
+            <div id="boxSelect">
+            <select id="selecaoLivros" onchange="mudancaLivro()">
+                <option>Livro</option>
+            </select>
+                
+            <select id="selecaoCapitulos" onchange="mudancaCapitulo()">
+                <option>Capítulo</option>
+            </select>
+                
+            </div>
+            
+                
+                
+                
+                
+                <div id="boxVersus">
+                    
+                </div>
+            
+            
+        </article>
+        
+        
+        
+        
+        
+        
+        <!--
+        <article id="FraseDiaria">
+            <h2></h2>
+            <legend><a href="https://getbible.net/docs"></a></legend>
+            
+        </article> parado -->
+        
+        
+        
+        
+        
+        <article id="Sobre">
+            <p id="tituloCredito">Créditos</p>
+            
+            <div>
+                <p>API</p>
+                <p class="subTitleCredit">• API: <a href="https://getbible.net/docs">GETBIBLE</a></p>
+                <p>Desenvolvedor:</p>
+                <div>
+                    
+                    <img src="https://cdn-icons-png.flaticon.com/512/1409/1409946.png" alt="" width="50" onclick="location.href='https://www.instagram.com/josias_alve_s/?utm_source=qr&igshid=ZDc4ODBmNjlmNQ%3D%3D'">
+                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968866.png" alt="" width="50" onclick="location.href='https://github.com/josi-dev'">
+                    
+                </div>
+                
+            </div>
+        </article>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </div>
+    
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<script src="app.js"></script>
+</html>
